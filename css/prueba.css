@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.textAlign {
+  text-align: center;
+  background-image: url(../multimedia/banner_fondo_verde.jpg);
+  background-repeat: repeat;
+  font-family: 'Balsamiq Sans', cursive; }
+
+.logoFondo {
+  background-image: url(../multimedia/banner_fondo_azul.jpg);
+  padding: 10px;
+  margin: 50px;
+  border-radius: 10px; }
+
+.textoFondo {
+  background-color: yellow;
+  border-style: double;
+  margin: 20px 300px;
+  padding: 20px 100px; }
+
+h1 {
+  color: black;
+  font-size: 50px; }
+
+h2 {
+  color: blue; }
+
+h3 {
+  color: green; }
+
+.textoSomos {
+  /*background-color: bisque;*/
+  border: solid 2px;
+  width: 1000px;
+  height: 200px;
+  overflow: auto;
+  margin: 40px 70px;
+  text-align: left;
+  background-image: linear-gradient(to bottom, #7fc07f, #a2d1a2); }
+
+.tablaOrdenada {
+  width: 400px;
+  margin: auto;
+  text-align: left; }
+
+.textoCategoria {
+  margin: 20px; }
+
+.nav {
+  margin: 50px 50px; }
+
+ul {
+  font-size: 1rem;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif; }
+  ul li {
+    display: inline-block;
+    position: relative;
+    padding: 0 25px;
+    border: 1px solid black;
+    margin: 0px 7px;
+    border-radius: 4px; }
+    ul li a {
+      color: red;
+      text-decoration: none;
+      font-size: 1rem; }
+      ul li a:hover {
+        color: blueviolet; }
+
+#categoria {
+  margin: 50px; }
+
+/*FLEXBOX COMPRAR*/
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.contenedor_hijo {
+  font-family: 'Courier New', Courier, monospace; }
+
+/*ANIMACION DEL LOGO DEL FOOTER*/
+.footerMov :hover {
+  transform: rotateX(50deg);
+  transition: all 1s; }
+
+/* ANIMACION DEL TITULO PRINC.*/
+@keyframes efec_titulo {
+  0% {
+    color: blue; }
+  50% {
+    color: rebeccapurple; }
+  100% {
+    color: red; } }
+
+.animacion {
+  animation-name: efec_titulo;
+  animation-iteration-count: infinite;
+  animation-duration: 2s; }
+
+/*GRIDs CATALOGO*/
+.container {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: ". beneficios comprar"; }
+
+.menuPrincipal {
+  font-size: 1rem;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif; }
+
+.container_nav {
+  width: auto;
+  display: grid;
+  justify-items: center;
+  display: inline-block;
+  align-items: center;
+  justify-content: center; }
+
+.formContacto {
+  display: grid;
+  width: 1000px;
+  height: 700;
+  justify-content: stretch;
+  margin: auto; }

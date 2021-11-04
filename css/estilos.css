@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+
+.textAlign{
+    text-align: center;
+    background-image: url(../multimedia/banner_fondo_verde.jpg);
+    background-repeat: repeat;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.logoFondo{
+    background-image: url(../multimedia/banner_fondo_azul.jpg);
+    padding: 10px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.textoFondo{
+    background-color: yellow;
+    border-style: double;
+    margin: 20px 300px;
+    padding: 20px 100px;
+    
+}
+
+h1{
+    color: black;
+    font-size: 50px;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: green;
+}
+
+/*Alinea los puntos de la lista 
+ul{
+    width: 100px;
+    margin: auto;
+  }*/
+
+
+.textoSomos{
+    /*background-color: bisque;*/
+    border: solid 2px;
+    width: 1000px;
+    height: 200px;
+    overflow: auto;
+    margin: 40px 70px;
+    text-align: left;
+    background-image: linear-gradient(to bottom, rgb(127, 192, 127), rgb(162, 209, 162));
+    
+}
+
+.tablaOrdenada{
+    width: 400px;
+    margin: auto;
+    text-align: left  ;
+}
+
+.textoCategoria{
+    margin: 20px;
+}
+
+.nav{
+    margin: 50px 50px;
+}
+
+.menuPrincipal{
+    font-size: 1rem;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*decoro los enlases dentro de las listas*/
+.menuPrincipal a{
+    color: red;
+    text-decoration: none;
+    font-size: 1rem;
+    
+}
+
+/*Cuando paso el puntero sobre los enlaces, cambian de color y tamaño*/
+.menuPrincipal a:hover{
+    color: blueviolet;
+    /*font-size: 1.2rem;*/
+}
+
+/*Mi menu se muestra ahora horizontal*/
+.menuPrincipal li{
+    display: inline-block;
+    position: relative;
+    padding: 0 25px;
+    border: 1px solid black;
+    margin: 0px 7px;
+    border-radius: 4px;
+}
+
+#categoria{
+    margin: 50px;
+}
+
+/*FLEXBOX COMPRAR*/
+
+.contenedor{    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    }
+
+.contenedor_hijo{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*ANIMACION DEL LOGO DEL FOOTER*/
+
+.footerMov :hover{
+    transform: rotateX(50deg);
+    transition: all 1s;
+}
+
+/* ANIMACION DEL TITULO PRINC.*/
+
+@keyframes efec_titulo{
+    0%{color: blue;}
+    50%{color: rebeccapurple;}
+    100%{color: red;}
+}
+
+.animacion{
+    animation-name: efec_titulo;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+/*GRIDs CATALOGO*/
+
+.container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto ;
+    grid-template-areas: 
+    ". beneficios comprar" 
+    ;
+
+}
+
+
